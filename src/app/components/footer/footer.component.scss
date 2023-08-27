@@ -1,0 +1,31 @@
+.footer-container {
+  z-index: 10;
+  height: 80px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  justify-content: space-between;
+
+  .left, .right {
+    z-index: 10;
+    width: 110px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 20px 10px 20px;
+  }
+
+  .middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    width: 42px;
+    height: 42px;
+    background-color: #c8e2ae;
+    border-radius: 50%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+  }
+
+}

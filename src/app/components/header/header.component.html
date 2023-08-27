@@ -1,0 +1,36 @@
+<div class="header-container">
+
+  <div (click)="moveToDate(3 , 'left')" class="day">
+    <span>{{getDay(3, 'substract', 'dd')}}</span>
+    <span>{{getDay(3, 'substract', 'DD')}}</span>
+  </div>
+  <div (click)="moveToDate(2 , 'left')" class="day">
+    <span>{{getDay(2, 'substract', 'dd')}}</span>
+    <span>{{getDay(2, 'substract', 'DD')}}</span>
+  </div>
+  <div (click)="moveToDate(1 , 'left')" class="day">
+    <span>{{getDay(1, 'substract', 'dd')}}</span>
+    <span>{{getDay(1, 'substract', 'DD')}}</span>
+  </div>
+
+  <div (click)="moveToDate()" class="day selected-day">
+    <span>   {{getDay(null, null, 'dd')}}</span>
+    <span>   {{getDay(null, null, 'DD')}}</span>
+  </div>
+
+
+  <div (click)="moveToDate(1 , 'right')" class="day">
+    <span>{{getDay(1, 'add', 'dd')}}</span>
+    <span>{{getDay(1, 'add', 'DD')}}</span>
+  </div>
+  <div (click)="moveToDate(2 , 'right')" class="day">
+    <span>{{getDay(2, 'add', 'dd')}}</span>
+    <span>{{getDay(2, 'add', 'DD')}}</span>
+  </div>
+  <div (click)="moveToDate(3 , 'right')" class="day">
+    <span>{{getDay(3, 'add', 'dd')}}</span>
+    <span>{{getDay(3, 'add', 'DD')}}</span>
+  </div>
+
+  <span class="month">{{getMonth()}}</span>
+</div>
